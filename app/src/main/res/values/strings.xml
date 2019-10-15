@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AppStoch</string>
-    <string name="activity_main_title">Stoch'</string>
+
+    <string name="activity_main_title">Stoch</string>
+    <string name="activity_main_start">Démarrer</string>
+
+    <string name="activity_stoch_params">Paramètres</string>
+    <string name="activity_stoch_lambda">λ</string>
 </resources>
