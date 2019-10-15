@@ -6,7 +6,7 @@ public class CalculFile {
     private int s;
     private int k;
 
-    public CalculFile(double lambda, double mu, int s, int k) {
+    public CalculFile(double lambda, Unites uniteLambda, double mu, Unites uniteMu, int s, int k) {
         this.lambda = lambda;
         this.mu = mu;
         this.s = s;
@@ -35,5 +35,19 @@ public class CalculFile {
 
     }
 
+    public double getRho(){
+        return lambda/mu;
+    }
 
+    public double getQ0() {
+        return q0;
+    }
+
+    public double getW() {
+        return w;
+    }
+
+    public double getL() {
+        return l;
+    }
 }
