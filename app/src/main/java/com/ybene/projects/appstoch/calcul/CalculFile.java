@@ -122,6 +122,24 @@ public class CalculFile {
         else return Math.pow(s, s)*Math.pow(rho, n)/f(s)*q0;
     }
 
+    public double getPsejour(double t){
+        if (s>1) return getPejourMMS(t);
+        else return getPejourMM1(t);
+    }
+
+    private double getPejourMM1(double t) {
+        return Math.exp(-mu*Math.pow(1-rho, t));
+    }
+
+    private double getPejourMMS(double t) {
+        double g = q0*Math.pow(rho*s, s)/(f(s)*(1-rho));
+        double sm1mrs = s - 1 - rho * s;
+        double mmut = -mu * t;
+        double exp = Math.exp(mmut * sm1mrs);
+        double d = (1 - exp) / sm1mrs;
+        return Math.exp(mmut) * (1 + g * d);
+    }
+
     public double getRho(){
         return rho;
     }
