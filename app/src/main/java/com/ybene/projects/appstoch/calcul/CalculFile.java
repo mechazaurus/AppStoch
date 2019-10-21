@@ -150,6 +150,23 @@ public class CalculFile {
         else return Math.exp(-s*mu*t*(1-rho))*PTq0;
     }
 
+    public double getLambda(){
+
+        return lambda;
+    }
+
+    public double getMu(){
+        return mu;
+    }
+
+    public int getS(){
+        return s;
+    }
+
+    public int getK(){
+        return k;
+    }
+
     public double getRho(){
         return rho;
     }
