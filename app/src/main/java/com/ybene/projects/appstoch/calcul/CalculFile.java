@@ -3,6 +3,7 @@ package com.ybene.projects.appstoch.calcul;
 public class CalculFile {
     private double lambda;
     private double mu;
+    private double rho;
     private int s;
     private int k;
 
@@ -33,34 +34,38 @@ public class CalculFile {
                 this.lambda = 1/(24*3600*lambda);
                 break;
         }
-        switch (uniteMu){
+        switch (uniteMu) {
             case CPS:
                 this.mu = mu;
                 break;
             case CPM:
-                this.mu = mu*60;
+                this.mu = mu * 60;
                 break;
             case CPH:
-                this.mu = mu*3600;
+                this.mu = mu * 3600;
                 break;
             case CPJ:
-                this.mu = mu*3600*24;
+                this.mu = mu * 3600 * 24;
                 break;
             case SECONDES:
-                this.mu = 1/mu;
+                this.mu = 1 / mu;
                 break;
             case MINUTES:
-                this.mu = 1/(60*mu);
+                this.mu = 1 / (60 * mu);
                 break;
             case HEURES:
-                this.mu = 1/(3600*mu);
+                this.mu = 1 / (3600 * mu);
                 break;
             case JOURS:
-                this.mu = 1/(24*3600*mu);
+                this.mu = 1 / (24 * 3600 * mu);
                 break;
         }
         this.s = s;
         this.k = k;
+        rho = lambda/(s*mu);
+        if (s>1) computeMMS();
+        else if (k>0) computeMM1k();
+        else computeMM1();
     }
 
     private double q0;
@@ -68,12 +73,6 @@ public class CalculFile {
     private double wq;
     private double l;
     private double lq;
-
-    public void compute(){
-        if (s>1) computeMMS();
-        else if (k>0) computeMM1k();
-        else computeMM1();
-    }
 
     private void computeMM1(){
         q0 = 1-lambda/mu;
@@ -84,11 +83,22 @@ public class CalculFile {
     }
 
     private void computeMM1k(){
-
+        q0 = (1-rho)/(1-Math.pow(rho, k-1));
+        w = 1/(mu-lambda);
+        wq = lambda/(mu*(mu-lambda));
+        l = rho*(1-(k+1)*Math.pow(rho, k)+k*Math.pow(rho, k+1))/((1-rho)*(1-Math.pow(rho, k+1)));
+        lq = l-(1-q0);
     }
 
     private void computeMMS(){
-
+        double somme = 0;
+        for (int j = 0; j < s; j++)
+            somme+=Math.pow(rho*s,j)/f(j)+Math.pow(rho*s,s)/(f(s)*(1-rho));
+        q0 = 1/somme;
+        lq = q0*Math.pow(rho*s,s)*rho/(f(s)*(1-rho)*(1-rho));
+        wq = lq/lambda;
+        w = wq + 1/mu;
+        l = lambda*w;
     }
 
     public double getQn(int n){
@@ -104,15 +114,16 @@ public class CalculFile {
     }
 
     private double getQnMM1k(int n) {
-        return 1;
+        return (1-rho)*Math.pow(rho, n)/(1-Math.pow(rho, k-1));
     }
 
     private double getQnMMS(int n) {
-        return 1;
+        if (n<s) return Math.pow(rho*s, n)/f(n)*q0;
+        else return Math.pow(s, s)*Math.pow(rho, n)/f(s)*q0;
     }
 
     public double getRho(){
-        return lambda/mu;
+        return rho;
     }
 
     public double getQ0() {
@@ -133,5 +144,11 @@ public class CalculFile {
 
     public double getLq() {
         return lq;
+    }
+
+    private int f(int n){
+        if (n==0) return 1;
+        else if (n<3) return n;
+        else return n*f(n-1);
     }
 }
