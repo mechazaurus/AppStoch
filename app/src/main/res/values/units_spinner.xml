@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="units_array">
+        <item>Par seconde</item>
+        <item>Par minute</item>
+        <item>Par heure</item>
+        <item>Par jour</item>
+        <item>Secondes</item>
+        <item>Minutes</item>
+        <item>Heures</item>
+        <item>Jours</item>
+    </string-array>
+</resources>

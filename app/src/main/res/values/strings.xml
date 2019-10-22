@@ -6,4 +6,19 @@
 
     <string name="activity_stoch_params">Paramètres</string>
     <string name="activity_stoch_lambda">λ</string>
+    <string name="activity_stoch_mu">µ</string>
+    <string name="activity_stoch_s">s</string>
+    <string name="activity_stoch_K">K</string>
+    <string name="activity_stoch_compute">Calculer</string>
+
+    <string name="activity_compute_results">Résultats</string>
+    <string name="activity_compute_q0">q0</string>
+    <string name="activity_compute_w">W</string>
+    <string name="activity_compute_wq">Wq</string>
+    <string name="activity_compute_l">L</string>
+    <string name="activity_compute_lq">Lq</string>
+
+    <string name="activity_about_authors">Auteurs</string>
+    <string name="activity_about_authors_names">Yohann BENETREAULT\nLucien LE GUELLEC</string>
+    <string name="activity_about_credits">Crédits</string>
 </resources>
