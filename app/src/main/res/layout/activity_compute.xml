@@ -20,120 +20,281 @@
         />
 
     <TextView
-        android:id="@+id/activity_compute_qo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/activity_compute_q0"
-        android:textSize="25dp"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:onClick="onClickQ0"
         android:clickable="true"
         />
 
     <TextView
+        android:id="@+id/activity_compute_qo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="80dp"
-        android:text="zzrzrzrz"
-        android:textSize="25dp"
+        android:layout_marginLeft="50dp"
+        android:text=""
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_compute_w"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClickW"
+        android:clickable="true"
         />
 
     <TextView
         android:id="@+id/activity_compute_w"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_compute_w"
-        android:textSize="25dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"
+        android:text=""
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="20dp"
-        android:onClick="onClickW"
-        android:clickable="true"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="80dp"
-        android:text="azdfznfiuenoz"
-        android:textSize="25dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="10dp"
+        android:text="secondes"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_compute_wq"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClickWq"
+        android:clickable="true"
         />
 
     <TextView
         android:id="@+id/activity_compute_wq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_compute_wq"
-        android:textSize="25dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="50dp"
+        android:text=""
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="20dp"
-        android:onClick="onClickWq"
         android:clickable="true"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="80dp"
-        android:text="socnsc"
-        android:textSize="25dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="10dp"
+        android:text="secondes"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_compute_l"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
         android:onClick="onClickL"
-        android:clickable="true"
         />
 
     <TextView
         android:id="@+id/activity_compute_l"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_compute_l"
-        android:textSize="25dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="50dp"
+        android:text="eonidvdpvd"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="20dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="80dp"
-        android:text="eonidvdpvd"
-        android:textSize="25dp"
+        android:text="@string/activity_compute_lq"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClickLq"
+        android:clickable="true"
         />
 
     <TextView
         android:id="@+id/activity_compute_lq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_compute_lq"
-        android:textSize="25dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="50dp"
+        android:text="v,eovi,"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="20dp"
-        android:onClick="onClickLq"
-        android:clickable="true"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="80dp"
-        android:text="v,eovi,"
-        android:textSize="25dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="10dp"
+        android:text="Probabilité d'avoir"
+        android:textSize="15dp"
         android:textColor="@color/colorPaleBlue"
         />
 
+    <EditText
+        android:id="@+id/compute_activity_number"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/colorPaleBlue"
+        android:backgroundTint="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="10dp"
+        android:text="clients dans le système :"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:id="@+id/activity_compute_prob_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="10dp"
+        android:text="Probabilité de passer plus de "
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <EditText
+        android:id="@+id/compute_activity_number2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/colorPaleBlue"
+        android:backgroundTint="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="10dp"
+        android:text="secondes dans le système :"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:id="@+id/activity_compute_prob_result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="10dp"
+        android:text="Probabilité de passer plus de "
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <EditText
+        android:id="@+id/compute_activity_number3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/colorPaleBlue"
+        android:backgroundTint="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="10dp"
+        android:text="secondes dans la file :"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <TextView
+        android:id="@+id/activity_compute_prob_result3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPaleBlue"
+        />
+
+    <ImageButton
+        android:id="@+id/activity_compute_recompute"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/activity_stoch_gears"
+        android:background="@null"
+        android:clickable="true"
+        android:onClick="onClickRecompute"
+        />
 
 
 </FrameLayout>

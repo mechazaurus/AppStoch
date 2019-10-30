@@ -49,9 +49,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="110dp"
-        android:backgroundTint="@color/colorPaleBlue"
-        />
+        android:layout_marginTop="135dp"
+        android:backgroundTint="@color/colorPaleBlue" />
 
 
     <TextView
@@ -84,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="@color/colorPaleBlue"
         />
 
@@ -131,7 +130,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="335dp"
         android:layout_marginLeft="85dp"
-        android:text="1"
+        android:text="0"
         android:textSize="30dp"
         android:textColor="@color/colorPaleBlue"
         android:backgroundTint="@color/colorPaleBlue"

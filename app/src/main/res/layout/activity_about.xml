@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="50dp"
         android:text="@string/activity_about_authors"
         android:textColor="@color/colorPaleBlue"
         android:textSize="50dp"
@@ -35,31 +35,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="250dp"
         android:text="@string/activity_about_authors_names"
         android:textColor="@color/colorPaleBlue"
         android:textSize="25dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="225dp"
-        android:text="@string/activity_about_credits"
-        android:textColor="@color/colorPaleBlue"
-        android:textSize="50dp"
-        android:fontFamily="cursive"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="325dp"
-        android:text="// TODO"
-        android:textSize="30dp"
-        android:textColor="@color/colorPaleBlue"
         />
 
 

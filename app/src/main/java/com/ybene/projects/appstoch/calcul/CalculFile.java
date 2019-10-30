@@ -1,6 +1,8 @@
 package com.ybene.projects.appstoch.calcul;
 
-public class CalculFile {
+import java.io.Serializable;
+
+public class CalculFile  implements Serializable {
     private double lambda;
     private double mu;
     private double rho;
