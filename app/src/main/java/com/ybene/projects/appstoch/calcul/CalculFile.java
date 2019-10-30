@@ -13,13 +13,13 @@ public class CalculFile {
                 this.lambda = lambda;
                 break;
             case CPM:
-                this.lambda = lambda*60;
+                this.lambda = lambda/60;
                 break;
             case CPH:
-                this.lambda = lambda*3600;
+                this.lambda = lambda/3600;
                 break;
             case CPJ:
-                this.lambda = lambda*3600*24;
+                this.lambda = lambda/(3600*24);
                 break;
             case SECONDES:
                 this.lambda = 1/lambda;
@@ -62,7 +62,7 @@ public class CalculFile {
         }
         this.s = s;
         this.k = k;
-        rho = lambda/(s*mu);
+        rho = this.lambda/(s*this.mu);
         if (s>1) computeMMS();
         else if (k>0) computeMM1k();
         else computeMM1();
@@ -128,7 +128,7 @@ public class CalculFile {
     }
 
     private double getPsejourMM1(double t) {
-        return Math.exp(-mu*Math.pow(1-rho, t));
+        return Math.exp(-mu*(1-rho)*t);
     }
 
     private double getPsejourMMS(double t) {
