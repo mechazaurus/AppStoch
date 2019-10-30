@@ -39,13 +39,13 @@ public class CalculFile {
                 this.mu = mu;
                 break;
             case CPM:
-                this.mu = mu * 60;
+                this.mu = mu / 60;
                 break;
             case CPH:
-                this.mu = mu * 3600;
+                this.mu = mu / 3600;
                 break;
             case CPJ:
-                this.mu = mu * 3600 * 24;
+                this.mu = mu / (3600 * 24);
                 break;
             case SECONDES:
                 this.mu = 1 / mu;
@@ -93,9 +93,9 @@ public class CalculFile {
     private void computeMMS(){
         double somme = 0;
         for (int j = 0; j < s; j++)
-            somme+=Math.pow(rho*s,j)/f(j)+Math.pow(rho*s,s)/(f(s)*(1-rho));
-        q0 = 1/somme;
-        lq = q0*Math.pow(rho*s,s)*rho/(f(s)*(1-rho)*(1-rho));
+            somme+=Math.pow(rho*s,j)/f(j);
+        q0 = 1/(somme+Math.pow(rho*s,s)/(f(s)*(1-rho)));
+        lq = q0*Math.pow(rho*s,2)*rho/(f(s)*(1-rho)*(1-rho));
         wq = lq/lambda;
         w = wq + 1/mu;
         l = lambda*w;

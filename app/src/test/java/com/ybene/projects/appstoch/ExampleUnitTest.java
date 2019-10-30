@@ -37,7 +37,7 @@ public class ExampleUnitTest {
         System.out.println(file.getRho());
         System.out.println(file.getQ0());
         System.out.println(file.getLq());
-        System.out.println(file.getWq());
+        System.out.println(file.getW());
         System.out.println(file.getPsejour(600));
         System.out.println(1-(file.getQ0()+file.getQn(1)+file.getQn(2)));
         Assert.assertTrue(true);
@@ -55,6 +55,20 @@ public class ExampleUnitTest {
     public void ctrl_tech() {
         CalculFile file = new CalculFile(20, Unites.CPH, 6, Unites.MINUTES, 3, 0);
         System.out.println(file.getRho());
+        Assert.assertTrue(true);
+    }
+
+    @Test
+    public void medecin() {
+        CalculFile file = new CalculFile(20, Unites.MINUTES, 15, Unites.MINUTES, 1, 0);
+        System.out.println(file.getLambda());
+        System.out.println(file.getMu());
+        System.out.println(file.getRho());
+        System.out.println(file.getQ0());
+        System.out.println(file.getLq());
+        System.out.println(file.getW());
+        System.out.println(file.getWq());
+        System.out.println(file.getPsejour(3600));
         Assert.assertTrue(true);
     }
 
